@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>let's Dog- עמוד הבית</title>
+    <meta name="description" content="עמוד הבית לאתר Let's Dog העוסק באימוץ כלבים." />
+    <meta name="keywords" content="כלב, שפה כלבית, אימוץ כלב,גור" />
+    <meta name="author" content=",לילית גורליק, מיה פרחי , אורטל נאמן,עופרי נוימן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="../styles/accessibilityStyle.css" rel="stylesheet" />
+
+    <link rel="icon" href="images/1_index/fav.png" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <artical>
+            <header>
+                <!--הגדרת כפתור נגישות דלג לתוכן העמוד-->
+                <ul id="skip">
+                    <li><a class="skipTo" href="#content-anchor">דלג לתוכן העמוד</a></li>
+                </ul>
+                <nav id="topNav" aria-label="ניווט מרכזי">
+                    <ul>
+                        <li><a href="11_index.html"><img id="navlogo" src="../images/1_index/logo.png" /></a></li>
+                        <li><a href="22_dogMatching.html">איזה כלב מתאים לנו?</a></li>
+                        <li>
+                            <a href="#" class="noActive">לקראת אימוץ</a>
+                            <ul>
+                                <li><a href="#" class="noActive">מאיפה מאמצים</a></li>
+                                <li><a href="33_puppy.html">חושבים על גור</a></li>
+                                <li><a href="#" class="noActive">חושבים על בוגר</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="noActive">אימצנו, איך מתמודדים?</a>
+                            <ul>
+                                <li><a href="44_challenges.html">אתגרים צפויים</a></li>
+                                <li><a href="55_dogLanguage.html">השפה הכלבית</a></li>
+                                <li><a href="#" class="noActive">עשה ואל תעשה</a></li>
+                                <li><a href="#" class="noActive">תחברו לקהילה</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="noActive">עצם הענין</a>
+                            <ul>
+                                <li> <a href="#" class="noActive">משהו טעים</a></li>
+                                <li> <a href="#" class="noActive">פריקת אנרגיה</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </header>
+            <section>
+                <img id="logo" src="../images/1_index/logo.png" />
+                <div>
+                    <video id="dogvideo1" width="500" height="500" controls autoplay>
+                        <source src="../videos/1_index/dogvideo1.mp4" type="video/mp4" />הטמעת הסרטון-צריך להוסיף, פורמט נוסף OGG
+                        <source src="../videos/1_index/oggdogvideo1.ogg" type="video/ogg" />
+                    </video>
+                </div>
+                <h1 id="title1">כל מה שצריך לדעת על אימוץ כלב</h1>
+                <div id="button1">
+                    <p>התאימו את אופי הכלב לאופי הבית: </p>
+                    <a href="22_dogMatching.html">איזה כלב מתאים לנו?</a>
+                </div>
+            </section>
+            <aside aria-label="כפתור מעבר לאתר רגיל"><a href="../1_index.html"><img src="../images/1_index/accessibility.png" width="30" height="30"/></a></aside>
+
+            <!--מיקום תוכן העמוד לכפתור הנגישות -->
+            <a name="content-anchor" class="accessibility" aria-label="Main Content"> </a>
+            <div role="main">
+                <section id="puppy">
+                    <h1>חושבים לאמץ גור?</h1>
+                    <h2>חמודים קטנים ושובי לב</h2>
+                    <h3>
+                        כולנו חלמנו לאמץ גור <br />
+                        אבל מהי המשמעות האמיתית של לאמץ אחד?
+                    </h3>
+                    <div id="button2"><a href="3_puppy.html">המדריך לאימוץ גור</a></div>
+                    <div>
+                        <video id="dogvideo2" width="350" height="350" controls autoplay>
+                            <source src="../videos/1_index/dogvideo2.mp4" type="video/mp4" />
+                            <source src="../videos/1_index/oggdogvideo2.ogg" type="video/ogg" />
+                        </video>
+                    </div>
+
+                </section>
+                <section id="dogleng">
+                    <h1>הב הב! למדו לדבר בכלבית!</h1>
+                    <h2>
+                        בואו לחזק את הקשר עם הכלב החדש שלכם <br />
+                        ולהבינו בצורה ברורה יותר
+                    </h2>
+                    <h3>הם מדברים איתנו, לנו נשאר רק להבין!</h3>
+                    <div id="button3"><a href="55_dogLanguage.html">למדו לדבר כלבית עם ג'וני</a></div>
+                    <div id="joni1"></div>
+                    <div id="joni2"></div>
+                    <div id="joni3"></div>
+                </section>
+            </div>
+
+            <!--תפריט ניווט תחתון עצמות-->
+            <footer>
+                <div>
+                    <nav id="bottomNav1" aria-label="תפריט תחתון">
+                        <ul>
+                            <li><a href="66_about.html">אודות</a></li>
+                            <li><a href="77_contactUs.html">צור קשר</a></li>
+                            <li><a href="88_siteMap.html">מפת האתר</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+        </artical>
+    </div>
+</body>
+</html>

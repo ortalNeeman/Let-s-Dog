@@ -1,0 +1,2048 @@
+﻿/* הטמעת פונט מאתר אינטרנט- לא מקומי*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+
+/*הגדרות כלליות לכל העמודים*/
+body { /* הגדרות כלליות לכל העמודים*/
+    direction: rtl;
+    font-family: 'Heebo', sans-serif;
+    background-color: #e93f01;
+    width: 1280px;
+    height: 720px;
+    margin: 0 auto;
+    font-size: 15px; /* P קביעת הגודל של הפונט בכל העמודים- כל מה שבתוך תגית*/
+    overflow-x: hidden;
+    color:white;
+}
+
+/*עיצוב של סרטונים וכותרות בעמודי תוכן פנימיים*/
+.perfectSize {
+    border-radius: 100%;
+    background-color: #8000ff;
+    padding-left: 15px;
+    padding-top: 10px;
+    position: relative;
+    float: left;
+}
+
+
+/* - תפריט ניווט עליון לכל העמודים-המלבן בצד שמאל רקע תפריט הניווט העליון*/
+#topNav {
+    background-color: #fdece5;
+    width: 1280px;
+    height: 28px;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
+/* לוגו האתר בתפריט הניווט*/
+#navlogo {
+    height: 45px;
+    width: 145px;
+    margin-top: -7px;
+    margin-right: 0px;
+}
+
+/* רקע הקוביות של תפריט הניווט העליון*/
+#topNav ul {
+    list-style: none;
+    width: 810px;
+    margin-top: 0px;
+    margin-right: -40px;
+    position: fixed;
+}
+
+    /* תצוגה של היררכיה 1 אופקי*/
+    #topNav ul li {
+        display: inline-block;
+        float: right;
+        border-left: 2px solid #e93f01;
+        width: 150px;
+    }
+
+        /* שינוי צבע של כל התפריטים*/
+        #topNav ul li a, .category {
+            display: block;
+            background-color: #fdece5;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            width: 150px;
+            height: 25px;
+            font-size: 14px;
+            padding-top: 3px;
+            font-weight: bold;
+        }
+
+            /* מעבר עכבר על תפריט*/
+            #topNav ul li a:hover {
+                background-color: #edc4ed;
+            }
+
+            /* לחיצה על תפריט*/
+            #topNav ul li a:active {
+                background-color: #9901ff;
+            }
+
+        /* הסתרת תת התפריט האנכי*/
+        #topNav ul li ul {
+            display: none;
+            /*position: absolute;*/
+            width: 150px;
+        }
+
+        /*  חשיפת תת התפריט האנכי במעבר עכבר*/
+        #topNav ul li:hover > ul {
+            display: block;
+            width: 150px;
+        }
+
+
+        /*  יישור תת התפריט האנכי שיהיה בדיוק מתחת לאופקי*/
+        #topNav ul li ul {
+            margin-right: -40px;
+        }
+
+
+/*  סימן אין כניסה על עמוד לא מפותח*/
+.noActive {
+    cursor: not-allowed;
+    color: gray;
+    text-decoration: none;
+}
+
+
+/*תפריט פירורי לחם לכל העמודים*/
+.navBread {
+    top: -60px;
+    position: absolute;
+    right: -22px;
+}
+    /*תפריט פירורי לחם לכל העמודים*/
+    .navBread ol {
+        list-style: none;
+    }
+        /*תפריט פירורי לחם לכל העמודים*/
+        .navBread ol li {
+            display: inline-block;
+        }
+
+    /*תפריט פירורי לחם לכל העמודים*/
+    .navBread li a:after {
+        content: " >";
+    }
+    /*תפריט פירורי לחם לכל העמודים*/
+    .navBread li:last-child:after {
+        content: "";
+    }
+
+
+/*מלבן אפור לכותרות הראשונות בכל העמודים*/
+.articleInner section h1 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px white;
+    margin-right: -130px;
+    margin-top: -99px;
+    padding-top: 7px;
+    background-color: #ce3700;
+    position: fixed;
+    z-index: 2;
+    width: 1280px;
+}
+
+/*דחיפת הכותרת שמאלה*/
+.titlegrey {
+    position: relative;
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*1- עמוד הבית*/
+
+/*לוגו האתר בדף הבית*/
+#logo {
+    width: 700px;
+    height: 250px;
+    margin-right: -5px;
+    padding-top: 50px;
+}
+
+/*סרטון כלבים מתחלפים + עיגול קצוות*/
+#dogvideo1 {
+    margin-top: -316px;
+    margin-right: 780px;
+    border-bottom-right-radius: 90%;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+}
+
+/*סרטון בגלילה 2 של העמוד + עיגול קצוות*/
+#dogvideo2 {
+    margin-right: 780px;
+    border-radius: 100%;
+    background-color: #8000ff;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: relative;
+    top: -270px;
+}
+
+/* עיצוב הכותרת שמתחת ללוגו הגדול*/
+#title1 {
+    margin-top: -268px;
+    margin-right: 70px;
+    text-shadow: 2px 2px 4px black;
+    font-size: 40px;
+    color: white;
+}
+
+/* יצירת מלבן הרקע שנכנס בחצי מהעמוד הראשון וחצי מהעמוד השני*/
+#puppy {
+    padding-top: 195px;
+    padding-right: 70px;
+    text-shadow: 2px 2px 4px white;
+    background-color: #ce3700;
+    color: white;
+    margin-top: 49px;
+    height: 600px;
+}
+
+    /* עיצוב הכותרת של גלילה 2 שמבצבצת בסוף של גלילה 1 לפני הגלילה*/
+    #puppy h1 {
+        margin-top: 120px;
+    }
+
+/* עיצוב הטקסט בגלילה השנייה בעמוד בית*/
+#puppy {
+    font-size: 20px;
+}
+
+/* עיצוב הטקסט בגלילה השלישית בעמוד בית*/
+#dogleng {
+    padding-right: 70px;
+    text-shadow: 0.5px 0.5px 0.5px white;
+    font-size: 20px;
+    padding-top: 75px;
+    position: relative;
+    bottom: -120px;
+}
+
+
+/* עיצוב כפתור 1- שליטה על הטקסט*/
+#button1 a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px white;
+    background-color: #3179ed;
+    border-radius: 50px;
+    padding-bottom: 10px;
+    padding-top: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* עיצוב כפתור 1- שליטה על הצל שלו בתור גבול-תוחם*/
+#button1 {
+    background-color: #1156c5;
+    height: 50px;
+    border-radius: 80px;
+    padding-bottom: 2px;
+    margin-right: 470px;
+    margin-top: 70px;
+    position: absolute;
+    top: 380px;
+    z-index: 1;
+}
+
+    /* עיצוב כפתור 1- מעבר עכבר על הכיתוב בכפתור- הוספת צל */
+
+    #button1 a:hover {
+        box-shadow: 0 0 30px white;
+    }
+
+    /* עיצוב כפתור 1- חשיפת הטקסט שמעל הכפתור בזמן מעבר עכבר*/
+
+    #button1:hover p {
+        color: white;
+        position: absolute;
+        z-index: 4;
+        top: -60px;
+        width: 300px;
+        display: inline-block;
+        font-size: 20px;
+        left: -35px;
+    }
+
+    /* עיצוב כפתור 1- הסתרת הטקסט שמעל הכפתור*/
+    #button1 p {
+        display: none;
+    }
+
+/* עיצוב כפתור 2- שליטה על הצל שלו בתור גבול-תוחם*/
+#button2 {
+    background-color: #1156c5;
+    width: 211px;
+    height: 38px;
+    border-radius: 80px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-right: 35px;
+}
+    /* עיצוב כפתור 2- שליטה על הטקסט*/
+    #button2 a {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        text-shadow: 2px 2px 4px white;
+        background-color: #3179ed;
+        border-radius: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 7px;
+        padding-top: 6px;
+    }
+
+        /* עיצוב כפתור 2- מעבר עכבר על הטקסט- יצירת זוהר לבן*/
+        #button2 a:hover {
+            box-shadow: 0 0 30px white;
+        }
+
+
+/* עיצוב כפתור 3- שליטה על הצל שלו בתור גבול-תוחם*/
+#button3 {
+    background-color: #1156c5;
+    width: 280px;
+    height: 40px;
+    border-radius: 80px;
+    padding-bottom: 11px;
+    margin-right: 400px;
+    margin-top: 40px;
+    margin-right: 35px;
+}
+
+    /* עיצוב כפתור 3- שליטה על הטקסט*/
+    #button3 a {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        text-shadow: 2px 2px 4px white;
+        background-color: #3179ed;
+        border-radius: 50px;
+        padding-bottom: 10px;
+        padding-top: 4px;
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+        /* עיצוב כפתור 3- מעבר עכבר על הטקסט*/
+        #button3 a:hover {
+            box-shadow: 0 0 30px white;
+        }
+
+
+/*תמונה מתמתח*/
+#joni1 {
+    background-image: url(../images/1_index/joni1.png);
+    background-repeat: no-repeat;
+    border-color: #8000ff;
+    background-size: 255px;
+    border-width: 10px 0px 0px 10px;
+    border-style: solid;
+    height: 255px;
+    width: 255px;
+    border-radius: 100%;
+    float: left;
+    position: relative;
+    left: 280px;
+    top: -270px;
+}
+
+/*תמונה ליקוק*/
+#joni2 {
+    background-image: url(../images/1_index/joni2.png);
+    background-repeat: no-repeat;
+    border-color: #8000ff;
+    background-size: 255px;
+    border-width: 10px 0px 0px 10px;
+    border-style: solid;
+    height: 220px;
+    width: 220px;
+    border-radius: 100%;
+    float: left;
+    position: relative;
+    left: -200px;
+    top: -380px;
+}
+
+/*תמונה ניעור*/
+#joni3 {
+    background-image: url(../images/1_index/joni3.png);
+    background-repeat: no-repeat;
+    border-color: #8000ff;
+    background-size: 255px;
+    border-width: 10px 0px 0px 10px;
+    border-style: solid;
+    height: 220px;
+    width: 220px;
+    border-radius: 100%;
+    float: left;
+    position: relative;
+    left: -430px;
+    top: -135px;
+}
+
+
+
+
+
+/*/*1- עמוד איזה כלב מתאים לי*/
+/* הטמעת הייצוג*/
+
+#box30 iframe {
+    width: 100%;
+    height: 90%;
+    display: block;
+    top: 70px;
+    position: absolute;
+    left: 30px;
+}
+
+
+
+/*.bottomNav1 ul*/ /*{*/ /*עיצוב השורה שבה התפריט נמצא- תפריט ניווט תחתון
+    list-style: none;
+    width: 512px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+רקע אפור
+.bottomNav1 {
+    background-color: #ce3700;
+    width: 1280px;
+    height: 70PX;
+    bottom: -720px;
+    position: relative;
+}
+
+    .bottomNav1 ul li { הגדרה שהתפריט יהיה אופקי- תפריט ניווט תחתון
+        display: inline-block;
+        float: right;
+    }
+
+        .bottomNav1 ul li a { עיצוב קישורים (מילים)- תפריט ניווט תחתון-
+            display: block;
+            color: brown;
+            text-decoration: none;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            padding-top: 20px;
+            הגדרת התמונה של העצמות כרקע- תפריט ניווט תחתון
+            background-image: url('../images/1_index/navbone.png');
+            background-size: 140px;
+            background-repeat: repeat-x;
+            background-position-y: center;
+            z-index: 99;
+        }
+
+            .bottomNav1 ul li a:hover { מעבר עכבר- תפריט ניווט תחתון
+                background-image: url('../images/1_index/‏‏navbonehover.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+            .bottomNav1 ul li a:active { בזמן לחיצה- תפריט ניווט תחתון-
+                background-image: url('../images/1_index/‏‏navbonevisited.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }*/
+
+
+/*פירורי לחם עמוד ייצוג אינטרקטיבי */
+#navBread1 {
+    top: 20px;
+    position: absolute;
+}
+    /*תפריט פירורי לחם לכל העמודים*/
+    #navBread1 ol {
+        list-style: none;
+    }
+        /*תפריט פירורי לחם לכל העמודים*/
+        #navBread1 ol li {
+            display: inline-block;
+        }
+    /*תפריט פירורי לחם לכל העמודים*/
+    #navBread1 li a:after {
+        content: " >";
+    }
+    /*תפריט פירורי לחם לכל העמודים*/
+    #navBread1 li:last-child:after {
+        content: "";
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*עמודים שפה-גור-אתגרים*/
+
+/*כותרות צהובות לעמודים שפה-גור-אתגרים*/
+.articleInner section h2 {
+    background-color: #9901ff;
+    width: 500px;
+}
+
+/*הזזת כל הטקסט בתוך עמודי שפה-גור-אתגרים שיתחיל יותר שמאלה*/
+.articleInner > section {
+    position: relative;
+    top: 100px;
+    padding-right: 130px;
+}
+
+.articleInner section p, .articleInner section h3, .articleInner section li {
+    font-size: 18px;
+}
+
+/*תפריט פנימי לעמודים שפה, גור ואתגרים*/
+/*תפריט ניווט פנימי כתום*/
+.Sidebar nav {
+    position: fixed;
+    clear: both;
+    background-color: #3179ed;
+    width: 100px;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+    top: 270px;
+    z-index: 99;
+}
+
+    /*תפריט ניווט פנימי כתום*/
+    .Sidebar nav ul li {
+        list-style-image: url('../images/0_aside/paw_outline.png');
+    }
+
+        /*תפריט ניווט פנימי כתום*/
+        .Sidebar nav ul li a {
+            display: block;
+            background-color: #3179ed;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            width: 50px;
+            z-index: 4;
+        }
+
+            /*תפריט ניווט פנימי כתום*/
+            .Sidebar nav ul li:hover, .Sidebar nav ul li a:active {
+                text-shadow: 0 0 10px white;
+                text-shadow: 2px 2px 4px white;
+            }
+
+        /*תפריט ניווט פנימי כתום*/
+        .Sidebar nav ul li:hover {
+            list-style-image: url('../images/0_aside/paw_fill.png');
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button6 {
+    border-color: #1156c5;
+    border-radius: 80px;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    border-top-style: hidden;
+    color: white;
+    text-shadow: 2px 2px 4px white;
+    background-color: #3179ed;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.button5 {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.5px 0.5px 1px white;
+}
+
+    .button5:hover {
+        text-shadow: 0.5px 0.5px 0.5px #3179ed;
+        color: black;
+    }
+
+    .button5:visited {
+        text-decoration: none;
+    }
+
+
+
+/*עמוד פנימי 4- אתגרים צפויים*/
+
+#rutineVideo {
+    border-radius: 100%;
+    background-color: #8000ff;
+    padding-left: 20px;
+    padding-top: 10px;
+    top: -170px;
+    left: 100px;
+    position: relative;
+    float: left;
+}
+
+#walkVideo {
+    border-radius: 100%;
+    background-color: #8000ff;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+#smellVideo {
+    border-radius: 100%;
+    background-color: #8000ff;
+    padding-left: 10px;
+    padding-top: 2px;
+    margin-right: 80px;
+}
+
+
+#eatVideo {
+    border-radius: 100%;
+    background-color: #8000ff;
+    padding-left: 10px;
+    padding-top: 2px;
+    margin-right: 86px;
+}
+
+
+#playVideo {
+    border-radius: 100%;
+    background-color: #8000ff;
+    padding-left: 10px;
+    padding-top: 2px;
+    margin-top: -900px;
+    margin-right: 890px;
+    position: relative;
+    top: -75px;
+}
+
+#howTo {
+    position: relative;
+    top: 110px;
+}
+
+.VIDEOCLASS {
+    margin-left: 50PX;
+}
+
+/*פסקאות מתחת לסרטונים*/
+#SECTION2 {
+    justify-content: center;
+    display: inline-block;
+    width: 1000px;
+    height: 1000px;
+}
+
+    #SECTION2 p {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+
+
+#SECTION1 {
+    justify-content: center;
+}
+
+#section4 {
+    justify-content: center;
+    position: relative;
+    top: -700px;
+}
+
+#section5 {
+    justify-content: center;
+    display: inline-block;
+    width: 1000px;
+    height: 1000px;
+    top: -700px;
+    position: relative;
+}
+
+
+    #section5 p {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+#inlineUL {
+    position: relative;
+    top: -115px;
+    float: left;
+    left: 170px;
+}
+
+#socT {
+    left: -50px;
+    position: relative;
+    top: -25px;
+}
+
+
+#jumT {
+    left: -100px;
+    position: relative;
+    top: -25px;
+}
+
+#neeT {
+    left: -180px;
+    position: relative;
+    top: -52px;
+}
+
+
+#walkT {
+    position: relative;
+    top: -80px;
+}
+
+#smellT {
+    position: relative;
+    top: -80px;
+    right: 50px;
+}
+
+#eatT {
+    position: relative;
+    top: -80px;
+    right: 90px;
+}
+
+#playT {
+    position: relative;
+    top: -80px;
+    right: 150px;
+}
+
+/*מיקום רשימה*/
+
+#dogContact {
+    position: relative;
+    bottom: 935px;
+}
+
+#section3 {
+    position: relative;
+    bottom: 750px;
+}
+
+/* סרטונים בשורה*/
+
+#garbageVideo {
+    position: relative;
+}
+
+#socksVideo {
+    margin-right: 80px;
+}
+
+#jumpVideo {
+    margin-right: 86px;
+}
+
+#needsVideo {
+    margin-right: 86px;
+}
+
+.Cvideo {
+    border-radius: 100%;
+    background-color: #8000ff;
+    padding-left: 10px;
+    padding-top: 2px;
+    margin-left: 50PX;
+}
+
+
+#howTo div ul li {
+    padding-top: 15px;
+    list-style-image: url(../images/0_aside/Bpaw.png);
+}
+
+#needsLong {
+    top: -1400px;
+    position: relative;
+}
+/*תמונות*/
+#pmess {
+    background-image: url(../images/4_challenges/mess.png);
+    background-repeat: no-repeat;
+    background-color: #8000ff;
+    background-size: 250px;
+    padding-left: 5px;
+    padding-top: 5px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    float: left;
+    top: -190px;
+    right: 195px;
+}
+
+#pneeds {
+    background-image: url(../images/4_challenges/needs.png);
+    background-repeat: no-repeat;
+    background-color: #8000ff;
+    background-size: 250px;
+    padding-left: 5px;
+    padding-top: 5px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    float: left;
+    top: -400px;
+    right: -58px;
+}
+
+#needsLong ul li {
+    padding-top: 15px;
+    list-style-image: url(../images/0_aside/Bpaw.png);
+}
+
+#mess {
+    position: relative;
+    top: -1350px;
+}
+
+#touch {
+    position: relative;
+    top: -1270px;
+}
+
+    #touch ul li {
+        padding-top: 15px;
+        list-style-image: url(../images/0_aside/Bpaw.png);
+    }
+
+#harness {
+    position: relative;
+    top: -1225px;
+}
+
+
+#touch1Video {
+    border-radius: 100%;
+    background-color: #8000ff;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: relative;
+    float: left;
+    right: 455px;
+    top: -197px;
+}
+
+#touch2Video {
+    border-radius: 100%;
+    background-color: #8000ff;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: relative;
+    float: left;
+    right: -430px;
+    top: -261px;
+}
+
+#iFrame2 {
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    display: block;
+    top: 47px;
+    left: 127px;
+    border-radius: 15%;
+    background-color: #8000ff;
+    padding-left: 10px;
+    padding-top: 6px;
+    margin-right: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*אודות*/
+#Lilit {
+    border-radius: 100%;
+    background-color: #8000ff;
+    height: 120px;
+    width: 120px;
+    padding-top: 5px;
+    padding-left: 5px;
+    position: relative;
+    top: 10px;
+    right: 50px;
+}
+
+#Ortal {
+    border-radius: 100%;
+    background-color: #8000ff;
+    height: 120px;
+    width: 120px;
+    padding-top: 5px;
+    padding-left: 5px;
+    position: relative;
+    top: 10px;
+    right: 75px;
+}
+
+#Maia {
+    border-radius: 100%;
+    background-color: #8000ff;
+    height: 120px;
+    width: 120px;
+    padding-top: 5px;
+    padding-left: 5px;
+    position: relative;
+    top: 10px;
+    right: 100px;
+}
+
+#Ofri {
+    border-radius: 100%;
+    background-color: #8000ff;
+    height: 120px;
+    width: 120px;
+    padding-top: 5px;
+    padding-left: 5px;
+    position: relative;
+    top: 10px;
+    right: 125px;
+}
+
+#sectionphoto {
+    justify-content: center;
+}
+
+#sectionname {
+    justify-content: center;
+}
+
+#lilitt {
+    position: relative;
+    right: 72px;
+}
+
+#ortalt {
+    position: relative;
+    top: -37px;
+    right: 228px;
+}
+
+#maiat {
+    position: relative;
+    top: -73px;
+    right: 390px;
+}
+
+#ofrit {
+    position: relative;
+    top: -111px;
+    right: 540px;
+}
+
+#student {
+    position: relative;
+    top: -100px;
+}
+
+#web {
+    position: relative;
+    top: 10px;
+}
+
+#pages {
+    position: relative;
+    top: 20px;
+}
+
+#content {
+    position: relative;
+    top: -60px;
+}
+
+#web li, .pawList li {
+    list-style-image: url(../images/0_aside/Bpaw.png);
+}
+
+
+#box6 {
+    position: relative;
+    top: 115px;
+}
+
+#box7 {
+    position: relative;
+    top: 45px;
+}
+
+/*מפת אתר
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*עיצוב "השפה הכלבית"*/
+
+#firstL {
+    position: relative;
+    top: 120px;
+}
+
+
+#kida {
+    position: relative;
+    top: 50px;
+}
+
+    #kida video {
+        position: relative;
+        bottom: 130px;
+        left: 250px;
+    }
+
+
+#stumic {
+    position: absolute;
+    top: 400px;
+    right: 650px;
+}
+
+    #stumic img {
+        position: relative;
+        bottom: 100px;
+        left: 600px;
+    }
+
+#pihok {
+    position: relative;
+    top: 600px;
+}
+
+    #pihok video {
+        position: relative;
+        bottom: 150px;
+        right: 50px;
+    }
+
+#likok {
+    position: absolute;
+    top: 950px;
+    right: 650px;
+}
+
+    #likok img {
+        position: relative;
+        bottom: 120px;
+        left: 850px;
+    }
+
+#shaking {
+    position: relative;
+    top: 1140px;
+}
+
+    #shaking img {
+        position: relative;
+        right: 365px;
+        bottom: 170px;
+    }
+
+#breathing {
+    position: absolute;
+    top: 1425px;
+    right: 600px;
+}
+
+    #breathing img {
+        position: relative;
+        bottom: 200px;
+        left: 750px;
+    }
+
+#look {
+    position: relative;
+    top: 1630px;
+}
+
+    #look video {
+        position: absolute;
+        top: -50px;
+        right: 700px;
+    }
+
+/*כותרות h2*/
+#h21 {
+    position: relative;
+    top: 50px;
+}
+
+#h22 {
+    position: relative;
+    top: 580px;
+}
+
+#h23 {
+    position: relative;
+    top: 1270px;
+}
+
+
+
+
+/*תפריט ניווט של עמודים גור-רתגרים-שפה-אודות-
+.bottomNav2 ul { עיצוב השורה שבה התפריט נמצא- תפריט ניווט תחתון
+    list-style: none;
+    width: 512px;
+    margin: 0 auto;
+    margin-bottom: 1900px;
+    position: relative;
+}
+
+רקע אפור
+.bottomNav2 {
+    background-color: #ce3700;
+    width: 1280px;
+    height: 70PX;
+    top: -720px;
+}
+
+    .bottomNav2 ul li { הגדרה שהתפריט יהיה אופקי- תפריט ניווט תחתון
+        display: inline-block;
+        float: right;
+    }
+
+        .bottomNav2 ul li a { עיצוב קישורים (מילים)- תפריט ניווט תחתון-
+            display: block;
+            color: brown;
+            text-decoration: none;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            padding-top: 20px;
+            הגדרת התמונה של העצמות כרקע- תפריט ניווט תחתון
+            background-image: url('../images/1_index/navbone.png');
+            background-size: 140px;
+            background-repeat: repeat-x;
+            background-position-y: center;
+            z-index: 99;
+        }
+
+            .bottomNav2 ul li a:hover { מעבר עכבר- תפריט ניווט תחתון
+                background-image: url('../images/1_index/‏‏navbonehover.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+            .bottomNav2 ul li a:active { בזמן לחיצה- תפריט ניווט תחתון-
+                background-image: url('../images/1_index/‏‏navbonevisited.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }*/
+
+
+
+
+
+/*עמוד חושבים על גור*/
+#puppy1Video {
+    position: relative;
+    bottom: 270px;
+    right: -100px;
+}
+
+#adoption, #needsShort, #exposure, #organization, #equipment {
+    margin-bottom: 150px;
+    position: relative;
+}
+
+    #adoption p, #needsShort p, #exposure p, #organization p, #equipment p {
+        line-height: 38px;
+    }
+
+#puppy3 {
+    background-image: url(../images/3_puppy/puppy3.jpeg);
+    background-repeat: no-repeat;
+    border-color: #8000ff;
+    background-size: 190px;
+    border-width: 10px 0px 0px 10px;
+    border-style: solid;
+    position: relative;
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+    float: left;
+    top: -115px;
+    left: 235px;
+}
+
+
+#puppy2Video {
+    float: left;
+    top: -240px;
+    left: -120px;
+}
+
+
+#puppy4 {
+    background-image: url(../images/3_puppy/puppy4.jpeg);
+    background-repeat: no-repeat;
+    border-color: #8000ff;
+    background-size: 110px;
+    border-width: 8px 0px 0px 8px;
+    border-style: solid;
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    float: left;
+    top: -200px;
+    right: -440px;
+}
+
+
+#puppy5 {
+    background-image: url(../images/3_puppy/puppy5.jpeg);
+    background-repeat: no-repeat;
+    border-color: #8000ff;
+    background-size: 220px;
+    border-width: 10px 0px 0px 10px;
+    border-style: solid;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    float: left;
+    top: -140px;
+    right: -110px;
+}
+
+
+#puppy6 {
+    background-image: url(../images/3_puppy/puppy6.jpeg);
+    background-repeat: no-repeat;
+    border-color: #8000ff;
+    background-size: 230px;
+    border-width: 12px 0px 0px 15px;
+    border-style: solid;
+    position: relative;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    float: left;
+    top: -200px;
+    right: -240px;
+}
+
+
+#puppy7 {
+    background-image: url(../images/3_puppy/puppy7.jpeg);
+    background-repeat: no-repeat;
+    border-color: #8000ff;
+    background-size: 250px;
+    border-width: 12px 0px 0px 15px;
+    border-style: solid;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    float: left;
+    top: -340px;
+    right: -100px;
+}
+
+#equipment ul li {
+    list-style-image: url(../images/0_aside/Bpaw.png);
+    line-height: 38px;
+}
+
+
+
+
+
+
+
+/*מפת אתר
+ תצוגה של היררכיה 1 אופקי*/
+.map2 ul li {
+    display: inline-block;
+    float: right;
+    border-left: 2px solid #e93f01;
+    width: 150px;
+}
+
+    /*תצוגה של היררכיה 1 אופקי*/
+    .map2 ul li ul li {
+        display: block;
+        float: right;
+        border-left: 2px solid #e93f01;
+        width: 150px;
+    }
+
+    /*שינוי צבע של כל התפריטים*/
+    .map2 ul li a {
+        display: block;
+        background-color: #fdece5;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        width: 150px;
+        height: 25px;
+        font-size: 14px;
+        padding-top: 3px;
+    }
+
+/*מעבר עכבר על תפריט*/
+.map2 li a:hover {
+    background-color: #edc4ed;
+}
+
+/*לחיצה על תפריט*/
+.map2 ul li a:active {
+    background-color: #9901ff;
+}
+
+
+.map2 ul li ul {
+    display: block;
+    position: relative;
+    width: 150px;
+    right: -40px;
+}
+
+
+.category2 {
+    font-weight: normal;
+    cursor: not-allowed;
+    color: #e4d4ce;
+    display: block;
+    color: grey;
+    background-color: #fdece5;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+נגישות
+/*הגדרות הנגישות לכפתור דלג לתוכן העמוד*/
+.accessibility {
+    position: absolute;
+    height: 10px;
+    width: 10px
+}
+
+/*הגדרות הנגישות לכפתור דלג לתוכן העמוד*/
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+    /*הגדרות הנגישות לכפתור דלג לתוכן העמוד*/
+    #skip li {
+        list-style-type: none
+    }
+
+    /*הגדרות הנגישות לכפתור דלג לתוכן העמוד*/
+    #skip a {
+        position: absolute;
+        top: 30px;
+    }
+
+        /*הגדרות הנגישות לכפתור דלג לתוכן העמוד*/
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 0;
+            z-index: 9999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: -4px !important;
+            font: bold 50px "Arial", "Freesans", sans-serif !important;
+            /*הגדרת צבעים והנראות של הכפתור*/
+            color: black;
+            background: transparent url(transparent.png) repeat scroll 0 0;
+            border: 1px dotted #ffb4db;
+        }
+
+.skipTo {
+    margin-right: 250px;
+    z-index: -1;
+}
+
+לא בשימוש
+/*פוטר עמוד בית*/
+#bottomNav1 ul {
+    list-style: none;
+    width: 512px;
+    margin: 0 auto;
+    margin-bottom: 350px;
+    position: relative;
+}
+
+/*רקע אפור*/
+#bottomNav1 {
+    background-color: #ce3700;
+    width: 1280px;
+    height: 70PX;
+    top: 269px;
+    position: relative;
+}
+
+
+
+    #bottomNav1 ul li { /*הגדרה שהתפריט יהיה אופקי- תפריט ניווט תחתון*/
+        display: inline-block;
+        float: right;
+        position: relative;
+        right: 386px;
+    }
+
+        #bottomNav1 ul li a { /*עיצוב קישורים (מילים)- תפריט ניווט תחתון-*/
+            display: block;
+            color: brown;
+            text-decoration: none;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            padding-top: 20px;
+            /*הגדרת התמונה של העצמות כרקע- תפריט ניווט תחתון*/
+            background-image: url('../images/1_index/navbone.png');
+            background-size: 140px;
+            background-repeat: repeat-x;
+            background-position-y: center;
+            z-index: 99;
+        }
+
+            #bottomNav1 ul li a:hover { /*מעבר עכבר- תפריט ניווט תחתון*/
+                background-image: url('../images/1_index/‏‏navbonehover.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+            #bottomNav1 ul li a:active { /*בזמן לחיצה- תפריט ניווט תחתון-*/
+                background-image: url('../images/1_index/‏‏navbonevisited.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+
+/*פוטר איזה כלב מתאים*/
+#bottomNav2 ul { /*עיצוב השורה שבה התפריט נמצא- תפריט ניווט תחתון*/
+    list-style: none;
+    width: 512px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*רקע אפור*/
+#bottomNav2 {
+    background-color: #ce3700;
+    width: 1280px;
+    height: 70PX;
+    bottom: -780px;
+    position: relative;
+}
+
+    #bottomNav2 ul li { /*הגדרה*/ /*שהתפריט יהיה אופקי- תפריט ניווט תחתון*/
+        display: inline-block;
+    }
+
+        #bottomNav2 ul li a { /*עיצוב קישורים (מילים)- תפריט ניווט תחתון*/
+            display: block;
+            color: brown;
+            text-decoration: none;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            padding-top: 20px;
+            /*הגדרת התמונה של העצמות כרקע- תפריט ניווט תחתון*/
+            background-image: url('../images/1_index/navbone.png');
+            background-size: 140px;
+            background-repeat: repeat-x;
+            background-position-y: center;
+            z-index: 99;
+        }
+
+            #bottomNav2 ul li a:hover { /*מעבר עכבר- תפריט ניווט תחתון*/
+                background-image: url('../images/1_index/‏‏navbonehover.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+            #bottomNav2 ul li a:active { /*בזמן לחיצה- תפריט ניווט תחתון-*/
+                background-image: url('../images/1_index/‏‏navbonevisited.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+
+
+
+/*פוטר חושבים על גור*/
+#bottomNav3 ul { /*עיצוב השורה שבה התפריט נמצא- תפריט ניווט תחתון*/
+    list-style: none;
+    width: 512px;
+    margin: 0 auto;
+    top: 100px;
+}
+
+/*רקע אפור*/
+#bottomNav3 {
+    background-color: #ce3700;
+    width: 1280px;
+    height: 70PX;
+    top: 100px;
+    position: relative;
+}
+
+    #bottomNav3 ul li { /*הגדרה שהתפריט יהיה אופקי- תפריט ניווט תחתון*/
+        display: inline-block;
+    }
+
+        #bottomNav3 ul li a { /*עיצוב קישורים (מילים)- תפריט ניווט תחתון-*/
+            display: block;
+            color: brown;
+            text-decoration: none;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            padding-top: 20px;
+            /*הגדרת התמונה של העצמות כרקע- תפריט ניווט תחתון*/
+            background-image: url('../images/1_index/navbone.png');
+            background-size: 140px;
+            background-repeat: repeat-x;
+            background-position-y: center;
+            z-index: 99;
+            position: relative;
+        }
+
+            #bottomNav3 ul li a:hover { /*מעבר עכבר- תפריט ניווט תחתון*/
+                background-image: url('../images/1_index/‏‏navbonehover.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+            #bottomNav3 ul li a:active { /*בזמן לחיצה- תפריט ניווט תחתון-*/
+                background-image: url('../images/1_index/‏‏navbonevisited.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+
+
+/*אורך עמוד*/
+#all {
+    height: 3000px;
+}
+/*פוטר אתגרים*/
+
+#bottomNav4 ul { /*עיצוב*/ /*השורה*/ /*שבה התפריט נמצא- תפריט ניווט תחתון*/
+    list-style: none;
+    width: 512px;
+    margin: 0 auto;
+    margin-bottom: -1160px;
+}
+
+#footerNav {
+    position: relative;
+    top: 40px;
+}
+
+
+/*רקע אפור*/
+#bottomNav4 {
+    background-color: #ce3700;
+    width: 1280px;
+    height: 70PX;
+    top: -720px;
+}
+
+    #bottomNav4 ul li { /*הגדרה שהתפריט יהיה אופקי- תפריט ניווט תחתון*/
+        display: inline-block;
+        float: right;
+        position: relative;
+        bottom: 850px;
+    }
+
+        #bottomNav4 ul li a { /*עיצוב קישורים (מילים)- תפריט ניווט תחתון-*/
+            display: block;
+            color: brown;
+            text-decoration: none;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            padding-top: 20px;
+            /*הגדרת התמונה של העצמות כרקע- תפריט ניווט תחתון*/
+            background-image: url('../images/1_index/navbone.png');
+            background-size: 140px;
+            background-repeat: repeat-x;
+            background-position-y: center;
+            z-index: 99;
+        }
+
+            #bottomNav4 ul li a:hover { /*מעבר עכבר- תפריט ניווט תחתון*/
+                background-image: url('../images/1_index/‏‏navbonehover.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+            #bottomNav4 ul li a:active { /*בזמן לחיצה- תפריט ניווט תחתון-*/
+                background-image: url('../images/1_index/‏‏navbonevisited.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+
+
+
+
+
+
+/*פוטר השפה הכלבית*/
+
+#bottomNav5 ul { /*עיצוב*/ /*השורה*/ /*שבה התפריט נמצא- תפריט ניווט תחתון*/
+    list-style: none;
+    width: 512px;
+    margin: 0 auto;
+    margin-bottom: 1900px;
+    position: relative;
+}
+
+/*רקע אפור*/
+#bottomNav5 {
+    background-color: #ce3700;
+    width: 1280px;
+    height: 70PX;
+    top: -720px;
+}
+
+    #bottomNav5 ul li { /*הגדרה שהתפריט יהיה אופקי- תפריט ניווט תחתון*/
+        display: inline-block;
+        float: right;
+    }
+
+        #bottomNav5 ul li a { /*עיצוב קישורים (מילים)- תפריט ניווט תחתון-*/
+            display: block;
+            color: brown;
+            text-decoration: none;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            padding-top: 20px;
+            /*הגדרת התמונה של העצמות כרקע- תפריט ניווט תחתון*/
+            background-image: url('../images/1_index/navbone.png');
+            background-size: 140px;
+            background-repeat: repeat-x;
+            background-position-y: center;
+            z-index: 99;
+        }
+
+            #bottomNav5 ul li a:hover { /*מעבר עכבר- תפריט ניווט תחתון*/
+                background-image: url('../images/1_index/‏‏navbonehover.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+            #bottomNav5 ul li a:active { /*בזמן לחיצה- תפריט ניווט תחתון-*/
+                background-image: url('../images/1_index/‏‏navbonevisited.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+
+
+/*פוטר של אודות*/
+#bottomNav6 ul { /*עיצוב*/ /*השורה*/ /*שבה התפריט נמצא- תפריט ניווט תחתון*/
+    list-style: none;
+    width: 512px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+/*רקע אפור*/
+#bottomNav6 {
+    background-color: #ce3700;
+    width: 1280px;
+    height: 70PX;
+}
+
+    #bottomNav6 ul li { /*הגדרה שהתפריט יהיה אופקי- תפריט ניווט תחתון*/
+        display: inline-block;
+        float: right;
+    }
+
+        #bottomNav6 ul li a { /*עיצוב קישורים (מילים)- תפריט ניווט תחתון-*/
+            display: block;
+            color: brown;
+            text-decoration: none;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            padding-top: 20px;
+            /*הגדרת התמונה של העצמות כרקע- תפריט ניווט תחתון*/
+            background-image: url('../images/1_index/navbone.png');
+            background-size: 140px;
+            background-repeat: repeat-x;
+            background-position-y: center;
+            z-index: 99;
+        }
+
+            #bottomNav6 ul li a:hover { /*מעבר עכבר- תפריט ניווט תחתון*/
+                background-image: url('../images/1_index/‏‏navbonehover.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+            #bottomNav6 ul li a:active { /*בזמן לחיצה- תפריט ניווט תחתון-*/
+                background-image: url('../images/1_index/‏‏navbonevisited.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+
+/*פוטר של צרו קשר*/
+#bottomNav7 ul {
+    list-style: none;
+    width: 512px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    position: relative;
+    left: 400px;
+}
+
+/*רקע אפור*/
+#bottomNav7 {
+    background-color: #ce3700;
+    width: 1280px;
+    height: 70PX;
+    position: relative;
+}
+
+
+
+    #bottomNav7 ul li { /*הגדרה שהתפריט יהיה אופקי- תפריט ניווט תחתון*/
+        display: inline-block;
+        float: right;
+        position: relative;
+        right: 386px;
+    }
+
+        #bottomNav7 ul li a { /*עיצוב קישורים (מילים)- תפריט ניווט תחתון-*/
+            display: block;
+            color: brown;
+            text-decoration: none;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            padding-top: 20px;
+            /*הגדרת התמונה של העצמות כרקע- תפריט ניווט תחתון*/
+            background-image: url('../images/1_index/navbone.png');
+            background-size: 140px;
+            background-repeat: repeat-x;
+            background-position-y: center;
+            z-index: 99;
+        }
+
+            #bottomNav7 ul li a:hover { /*מעבר עכבר- תפריט ניווט תחתון*/
+                background-image: url('../images/1_index/‏‏navbonehover.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+            #bottomNav7 ul li a:active { /*בזמן לחיצה- תפריט ניווט תחתון-*/
+                background-image: url('../images/1_index/‏‏navbonevisited.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+
+/*פוטר של מפת אתר*/
+#bottomNav8 {
+    background-color: #ce3700;
+    width: 1280px;
+    height: 70PX;
+    top: -720px;
+    top: 190px;
+    position: relative;
+}
+
+    #bottomNav8 ul li { /*הגדרה שהתפריט יהיה אופקי- תפריט ניווט תחתון*/
+        display: inline-block;
+        float: right;
+    }
+
+    #bottomNav8 ul {
+        padding-right: 400px;
+    }
+
+        #bottomNav8 ul li a { /*עיצוב קישורים (מילים)- תפריט ניווט תחתון-*/
+            display: block;
+            color: brown;
+            text-decoration: none;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            padding-top: 20px;
+            /*הגדרת התמונה של העצמות כרקע- תפריט ניווט תחתון*/
+            background-image: url('../images/1_index/navbone.png');
+            background-size: 140px;
+            background-repeat: repeat-x;
+            background-position-y: center;
+            z-index: 99;
+        }
+
+            #bottomNav8 ul li a:hover { /*מעבר עכבר- תפריט ניווט תחתון*/
+                background-image: url('../images/1_index/‏‏navbonehover.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+            #bottomNav8 ul li a:active { /*בזמן לחיצה- תפריט ניווט תחתון-*/
+                background-image: url('../images/1_index/‏‏navbonevisited.png');
+                background-size: 140px;
+                background-repeat: repeat-x;
+                background-position-y: center;
+            }
+
+
+
+
+
+/*צור קשר*/
+
+#box12 {
+    padding-top: 10px;
+}
+
+
+#sendbutton {
+    margin-right: 45px;
+    margin-bottom: -10px;
+}
+
+
+form {
+    position: relative;
+    right: 200px;
+    top: -180px;
+}
+
+
+#circ1 {
+    border-radius: 100%;
+    background-color: #8000ff;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 20px;
+    right: 25px;
+    box-shadow: -7px -2px #1156c5;
+}
+
+#circ2 {
+    border-radius: 100%;
+    background-color: #8000ff;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 20px;
+    right: 100px;
+    box-shadow: 4px 2px #3179ed;
+}
+
+#circ3 {
+    border-radius: 100%;
+    background-color: #8000ff;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: -40px;
+    right: 30px;
+    box-shadow: 3px -1px #3179ed;
+}
+
+#circ4 {
+    border-radius: 100%;
+    background-color: #8000ff;
+    height: 110px;
+    width: 110px;
+    position: relative;
+    top: -310px;
+    right: 400px;
+    box-shadow: -5px 2px #3179ed;
+}
+
+#circ5 {
+    border-radius: 100%;
+    background-color: #8000ff;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: -360px;
+    right: 520px;
+    box-shadow: -5px 2px #1156c5;
+}
+
+#circ6 {
+    border-radius: 100%;
+    background-color: #8000ff;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -550px;
+    right: 500px;
+    box-shadow: 3px 1px #3179ed;
+}
